@@ -1,37 +1,104 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>mayuri</title>
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="images/cse.css">
-    </head>
-<body bgcolor="black">
-    <center>
-    <header>
-        <nav>
-            <ul>
-              
-              <li>| <a href="index.html">Home</a> |</li>
-              <li>| <a href="intro.html">About</a> |</li>
-              <li>| <a href="fun.html">info.</a> |</li>
-              <li>| <a href="cse.html">media</a> |</li>
-              </ul>
-              </nav></header>
-  
-        <p><font face="Matura MT Script Capitals" style="color: green;" size="10">&nbsp; &nbsp; 
-            Im Mayuri Vhargar</font></p>
-            <div class="gallery">
-                <details><summary>
-        <img src="images/introimage.jpeg" height="200" width="200" 
-        style="border-color:black; box-shadow: 0 0 30px greenyellow; ;"></summary>
-    <iframe src="fun.html" width="100%" height="100%" style="border: none;"></iframe>
-    
-    </details>
-        <br><br><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-       <a href="https://github.com/merry26" target="_blank"><img src="images/github.jpeg" height="50" width="50" style = "border-radius : 50%"></a>&nbsp;&nbsp;&nbsp;
-      <a href="https://www.linkedin.com/in/mayuri-vhargar-0033a91b0/" target="_blank"><img src="images/linkedin.jpeg" height="50" width="50" style = "border-radius : 50%"></a>
-    </div></center>
+    <title>HOME DESIGN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#">HOME design</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#">Information</a></li>
+        <li><a href="#">Interior</a></li>
+        <li><a href="#">Designers</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="banner"></div>
+
+  <div class="about">
+    <div class="content">
+     
+      <div id="home" class="title">
+        <div class="para"><b>Hiiiii...!!</b>
+         <p>When you know the basic home designing principles you can transform any space 
+          to look fabulous. You know what it feels like when you walk into a well designed room. 
+          You can sense how everything feels cohesive and put together. It feels just right. 
+          You can achieve that effect in your own home with a little knowledge of basic design principles. 
+          Pair that knowledge with practice and experimentation and you're on your way to creating a beautiful 
+          home</p><br>
+          </div>
+          <h1> PHOTO GALLERY</h1><br>
+          <div class="gallery">
+            <img src="images/img1.jpg" alt="img1" class="gallery_photo gallery_photo--1">
+            <img src="images/img2.jpg" alt="img2" class="gallery_photo gallery_photo--2">
+            <img src="images/img3.jpg" alt="img3" class="gallery_photo gallery_photo--3">
+            <img src="images/img4.jpg" alt="img4" class="gallery_photo gallery_photo--4">
+            <img src="images/img5.jpg" alt="img5" class="gallery_photo gallery_photo--5">
+            <img src="images/img6.jpg" alt="img6" class="gallery_photo gallery_photo--6">
+          </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
 </body>
 </html>
