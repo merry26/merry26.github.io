@@ -35,11 +35,39 @@
 
 <div class="text-box">
   <h1>INDIA'S BEST COMPANY</h1><br><br><br><br>
-  <a href="" class="home-btn">LOGIN TO EXPLORE</a>
+ 
+  <input type="checkbox" id="show">
+    <label for="show" class="home-btn">LOGIN TO EXPLORE</label>
   <p>
     Pair the knowledge with practice and experimentation and you're on your way to creating a beautiful home.
   </p>
-   
+           
+            <div class="container">
+                <div class="colm-1">
+                    <div class="form-box">
+                        <div class="form">
+                            <form class="login-form">
+                                <label for="show" class="close-btn" title="close">×</label>
+                                <h1 class="main-heading">LOGIN </h1>
+				                <input type="text"placeholder="user name" required/>
+				                <input type="password"placeholder="password" required/>
+				                <button>Log in</button>
+				                <p class="message">Not Registered? <a href="#">Register</a></p>
+				            </form>
+                            <form class="register-form">
+                                <label for="show" class="close-btn" title="close">×</label>
+                                <h1 class="main-heading">REGISTER</h1>
+				                <input type="text" placeholder="user name" required/>
+				                <input type="text" placeholder="email-id" required/>
+				                <input type="password" placeholder="password" required/>
+				                <button>Register</button>
+				                <p class="message">Already Registered?<a href="#">Login</a>
+				                </p>
+				            </form>
+			             </div>
+	                </div>
+                </div>
+            </div>
   </div>
 
 </section>
@@ -125,6 +153,11 @@
     navlinks.style.right = "-200px";
   }
 
+</script>
+<script src='https://code.jquery.com/jquery-3.2.1.min.js'>
+</script>
+<script>
+    $('.message a').click(function(){$('form').animate({height: "toggle",opacity: "toggle"},"slow");});
 </script>
 </body>
 </html>

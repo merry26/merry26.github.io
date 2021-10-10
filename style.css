@@ -4,6 +4,7 @@
   padding: 0;
   font-family: 'Poppins', sans-serif;
 }
+/*-----background------*/
 .header{
   min-height: 100vh;
   width: 100%;
@@ -12,6 +13,7 @@
   background-size: cover;
   position: relative;
 }
+/*---------navigation bar-------*/
 nav{
   
   display: flex;
@@ -73,22 +75,7 @@ nav{
 .text-box h1{
   font-size: 62px;
 }
-.home-btn{
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 12px 34px;
-  font-size: 13px;
-  background: transparent;
-  position: relative;
-  cursor: pointer;
-  }
-  .home-btn:hover{
-    border: 1px solid #9e36f4;
-    background: #9e36f4;
-    transition: 1 s;
-  }
+
 .text-box p{
   margin: 10px 0 40px;
   font-size: 14px;
@@ -101,7 +88,7 @@ nav .fa{
 
 @media(max-width:700px){
   .text-box{
-    top: 75%;
+    top: 70%;
   }
   .text-box h1{
     font-size: 30px;
@@ -135,6 +122,139 @@ nav .fa{
     padding: 30px;
   }
 }
+
+/*-------------LOG IN / REGISTOR FORM---------*/
+.home-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  }
+  .home-btn:hover{
+    border: 1px solid #9e36f4;
+    background: #9e36f4;
+    transition: 1 s;
+  }
+input[type="checkbox"]{
+  display: none;
+}
+
+#show:checked ~ .container{
+  display: block;
+}
+
+.container{
+  display: none;
+  width: 350px;
+  padding: 20px;
+  border-radius: 4px;
+  background: transparent;
+  border:none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.container .close-btn{
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.close-btn:hover{
+  color: red;
+}
+
+.form-box
+
+{
+  width: 400px;
+  height: 400px;
+  position: relative;
+  top: -85px;
+  left: -30px;
+ background: rgba(0,0,0,0.6);
+
+}
+
+.main-heading
+{
+  color: #f3c693;
+  padding-bottom: 20px;
+
+}
+
+.form
+{
+position: relative;
+margin: 0 auto 100px;
+padding: 45px;
+  text-align: center;
+
+}
+
+.form input
+{
+font-family: sans-serif;
+outline: none;
+border: none;
+border-bottom: 1px solid rgb(221, 209, 209);
+width: 100%;
+margin: 0 0 15px;
+padding: 15px;
+font-size: 14px;
+background: transparent;
+font-weight: 300;
+color: #fff;
+
+}
+
+.form button
+{
+font-family: sans-serif;
+width: 100%;
+color:black;
+font-size: 14px;
+cursor: pointer;
+padding: 15px;
+display: block;
+margin: auto;
+background: #f3c693;
+border: 0;
+outline: none;
+border-radius: 30px;
+
+}
+
+.form .message
+{
+  font-size: 12px;
+  margin: 15px 0 0;
+  color: white;
+
+}
+
+.form .message a
+{
+
+color: orangered;
+text-decoration: none;
+
+}
+
+.form .register-form
+{
+display: none;
+}
+
 
 /*----home page--*/
 
@@ -280,3 +400,11 @@ transform: scale(0.9);
     right: 300px;
     }
 }
+
+
+
+
+
+
+
+
