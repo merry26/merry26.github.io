@@ -532,7 +532,17 @@ transform: scale(0.9);
     background: #da974b;
     transition: 1 s;
   }
-
-
+/*-----footer-----*/
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+.footer h4{
+  
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
 
 
