@@ -537,12 +537,19 @@ transform: scale(0.9);
   width: 100%;
   text-align: center;
   padding: 30px 0;
-}
-.footer h4{
   
+
+}
+
+.footer-heading a {
+  list-style: none;
+  padding: 8px 12px;
+  position: relative;
+  color:black;
+  text-decoration: none;
+  font-size: 30px;
   margin-bottom: 25px;
   margin-top: 20px;
   font-weight: 600;
 }
-
 
