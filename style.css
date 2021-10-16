@@ -33,9 +33,11 @@ nav{
   display: inline-block;
   padding: 8px 12px;
   position: relative;
-  color: #fff;
+  color: black;
   text-decoration: none;
   font-size: 30px;
+  font-family: Broadway;
+  font-weight: 600;
 }
 .nav-links{
   flex: 1;
@@ -402,7 +404,7 @@ letter-spacing: 15px;
 text-align: center;
 text-shadow: 0 0 30px rgb(46, 109, 138);
 }
-.gallery{
+.gallery_1{
 width: 1000px;
 margin: 0 auto;
 position: relative;
@@ -444,11 +446,11 @@ right: 300px;
 transform: scale(1.05) translate(-20px);
 z-index: 20;
 }
-.gallery:hover .gallery_photo:not(:hover){
+.gallery_1 .gallery_photo:not(:hover){
 transform: scale(0.9);
 }
 @media(max-width:700px){
-  .gallery{
+  .gallery_1{
     width: 500px;
   }
   .gallery_photo{
