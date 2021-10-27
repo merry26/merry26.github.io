@@ -6,6 +6,7 @@
     <title>HOME DESIGN</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="interior.css">
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
     <script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" >
@@ -13,64 +14,56 @@
 <script src="https://kit.fontawesome.com/170e4b0551.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body >
+  <!---header page-->
 <section  id="main-page" class="header">  
   <nav>
     <div class="logo"><a href="#footer">LAVISH</a></div>
-    <div class="nav-links" id="navlinks">
-      <!---CLOSE ICON-->
-        <i class="fa fa-times" onclick="hidemenu()"></i> 
+    <div class="menu-btn">
       
-      <ul >
-        <li><a href="#home">Home</a></li>
-        <li><a href="#">Information</a></li>
-        <li><a href="#interior">Interior</a></li>
-        <li><a href="#">Designers</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
 
-      </ul>
-      </div>
-      <!---MENU ICON-->
-        <i class="fa fa-bars" onclick="showmenu()"></i>  
-      
-  </nav>
-
-<div class="text-box">
-  <h1>INDIA'S BEST COMPANY</h1><br><br><br><br>
- 
-  <input type="checkbox" id="show">
-    <label for="show" class="home-btn">LOGIN TO EXPLORE</label>
-  <p>
-    Pair the knowledge with practice and experimentation and you're on your way to creating a beautiful home.
-  </p>
-           
-            <div class="container">
-                <div class="colm-1">
-                    <div class="form-box">
-                        <div class="form">
-                            <form class="login-form">
-                                <label for="show" class="close-btn" title="close">×</label>
-                                <h1 class="main-heading">LOGIN </h1>
-				                <input type="text"placeholder="user name" required/>
-				                <input type="password"placeholder="password" required/>
-				                <button>Log in</button>
-				                <p class="message">Not Registered? <a href="#">Register</a></p>
-				            </form>
-                            <form class="register-form">
-                                <label for="show" class="close-btn" title="close">×</label>
-                                <h1 class="main-heading">REGISTER</h1>
-				                <input type="text" placeholder="user name" required/>
-				                <input type="text" placeholder="email-id" required/>
-				                <input type="password" placeholder="password" required/>
-				                <button>Register</button>
-				                <p class="message">Already Registered?<a href="#">Login</a>
-				                </p>
-				            </form>
-			             </div>
-	                </div>
-                </div>
-            </div>
-  </div>
+    <main id="home">
+      <div class="text-box">
+        <h1>INDIA'S BEST COMPANY</h1><br><br><br><br>
+       
+        <input type="checkbox" id="show">
+          <label for="show" class="home-btn">LOGIN TO EXPLORE</label>
+        <p>
+          Pair the knowledge with practice and experimentation and you're on your way to creating a beautiful home.
+        </p>
+                 
+                  <div class="container">
+                      <div class="colm-1">
+                          <div class="form-box">
+                              <div class="form">
+                                  <form class="login-form">
+                                      <label for="show" class="close-btn" title="close">×</label>
+                                      <h1 class="main-heading">LOGIN </h1>
+                              <input type="text"placeholder="user name" required/>
+                              <input type="password"placeholder="password" required/>
+                              <button onclick="alert('login successfully..!!')">Log in</button>
+                              <p class="message">Not Registered? <a href="#">Register</a></p>
+                          </form>
+                                  <form class="register-form">
+                                      <label for="show" class="close-btn" title="close">×</label>
+                                      <h1 class="main-heading">REGISTER</h1>
+                              <input type="text" placeholder="user name" required/>
+                              <input type="text" placeholder="email-id" required/>
+                              <input type="password" placeholder="password" required/>
+                              <button onclick="alert('Registered successfully...!')">Register</button>
+                              <p class="message">Already Registered?<a href="#">Login</a>
+                              </p>
+                          </form>
+                         </div>
+                        </div>
+                      </div>
+                  </div>
+        </div>
+    </main>
 
 </section >
 
@@ -182,27 +175,79 @@
       </p>
       
     </section>
+    <nav class="menu">
+      <div class="menu-branding">
+        <div class="portrait"></div>
+      </div>
+      <ul class="menu-nav">
+        <li class="nav-item current">
+          <a href="#main-page" class="nav-link">
+            HOME
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">
+            INFORMATION
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="interior.html" class="nav-link">
+            INTERIOR
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#designers" class="nav-link">
+            DESIGNERS
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">
+            CONTACT US
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-<!------javascript for toggle menu----->
 
-<script>
-  var navlinks = document.getElementById("navlinks");
+<!----javascript for login ,register page and navigation bar-->
 
-  function showmenu(){
-    navlinks.style.right = "0";
-  }
-  
-  function hidemenu(){
-    navlinks.style.right = "-200px";
-  }
-
-</script>
-
-<!----javascript for login and register page-->
-<script src='https://code.jquery.com/jquery-3.2.1.min.js'>
-</script>
 <script>
     $('.message a').click(function(){$('form').animate({height: "toggle",opacity: "toggle"},"slow");});
+
+// Select DOM Items
+const menuBtn = document.querySelector('.menu-btn');
+const menu = document.querySelector('.menu');
+const menuNav = document.querySelector('.menu-nav');
+const menuBranding = document.querySelector('.menu-branding');
+const navItems = document.querySelectorAll('.nav-item');
+
+// Set Initial State Of Menu
+let showMenu = false;
+
+menuBtn.addEventListener('click', toggleMenu);
+
+function toggleMenu() {
+  if (!showMenu) {
+    menuBtn.classList.add('close');
+    menu.classList.add('show');
+    menuNav.classList.add('show');
+    menuBranding.classList.add('show');
+    navItems.forEach(item => item.classList.add('show'));
+
+    // Set Menu State
+    showMenu = true;
+  } else {
+    menuBtn.classList.remove('close');
+    menu.classList.remove('show');
+    menuNav.classList.remove('show');
+    menuBranding.classList.remove('show');
+    navItems.forEach(item => item.classList.remove('show'));
+
+    // Set Menu State
+    showMenu = false;
+  }
+}
+
 </script>
 </body>
 </html>
