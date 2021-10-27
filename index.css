@@ -316,6 +316,7 @@ border-radius: 2px;
 box-shadow: 0 20px 40px rgb(131, 133, 134);
 position: absolute;
 z-index: 2;
+overflow: hidden;
 }
 .gallery_photo--1{
 top: 0;

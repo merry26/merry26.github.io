@@ -1,9 +1,7 @@
-body{
-	font-family: sans-serif;
-}
+
 .bg-img{
    
-	background: url(images/bg-top.jpg);
+	background: url("images/interior_2.jpg");
     height: 100%;
     width: 100%;
     background-position: center;
@@ -31,6 +29,9 @@ body{
 	transform: scale(1.1);
 }
 @media(max-width:700px){
+    .bg-img{
+       background-color: #000;
+    }
 	.gallery_2 img{
 		height: 200px;
 		width: 300px;
