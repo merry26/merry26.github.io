@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME DESIGN</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="interior.css">
+    <link rel="stylesheet" href="designers.css">
     <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
     <script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,36 +17,16 @@
 <body >
   <!---header page-->
 <section  id="main-page" class="header">  
-  <div class="bg-img">
   <nav>
     <div class="logo"><a href="#footer">LAVISH</a></div>
-
     <div class="menu-btn">
+      
       <div class="btn-line"></div>
       <div class="btn-line"></div>
       <div class="btn-line"></div>
     </div>
 
-<!------photo gallery 2----->
-  <center>
-    <section id="interior" class="gallery_2">
-      <br>
-      <div class="interior-title">INTERIOR PHOTO GALLERY </div>
-     
-       <a href="images/gallery2_1.jpg" data-lightbox="pic1"> <img src="images/gallery2_1.jpg"></a>
-       <a href="images/gallery2_2.jpg" data-lightbox="pic1"> <img src="images/gallery2_2.jpg"></a>
-       <a href="images/gallery2_3.jpg" data-lightbox="pic1"><img src="images/gallery2_3.jpg"></a>
-       <a href="images/gallery2_4.jpg" data-lightbox="pic1"><img src="images/gallery2_4.jpg"></a>
-       <a href="images/gallery2_5.jpg" data-lightbox="pic1"><img src="images/gallery2_5.jpg"></a>
-       <a href="images/gallery2_6.jpg" data-lightbox="pic1"><img src="images/gallery2_6.jpg"></a>
-       
-       <br><br><br> <br><br><br> 
-       
-    </section>
-  </center>
-</div>
-  <br><br><br>
-
+ 
   
   </section>
   <!----footer----->
@@ -71,43 +51,44 @@
       
     </section>
     <nav class="menu">
-      <div class="menu-branding">
-        <div class="portrait"></div>
-      </div>
-      <ul class="menu-nav">
-        <li class="nav-item current">
-          <a href="index.html" class="nav-link">
-            HOME
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="information.html" class="nav-link">
-            INFORMATION
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="interior.html" class="nav-link">
-            INTERIOR
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="designers.html" class="nav-link">
-            DESIGNERS
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link">
-            CONTACT US
-          </a>
-        </li>
-      </ul>
-    </nav>
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item current">
+            <a href="index.html" class="nav-link">
+              HOME
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="information.html" class="nav-link">
+              INFORMATION
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="interior.html" class="nav-link">
+              INTERIOR
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="designers.html" class="nav-link">
+              DESIGNERS
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">
+              CONTACT US
+            </a>
+          </li>
+        </ul>
+      </nav>
+  
 
-
-<!----javascript for  navigation bar-->
+<!----javascript for login ,register page and navigation bar-->
 
 <script>
-   
+    $('.message a').click(function(){$('form').animate({height: "toggle",opacity: "toggle"},"slow");});
+
 // Select DOM Items
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
@@ -141,6 +122,9 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+</script>
+
 
 </script>
 </body>
